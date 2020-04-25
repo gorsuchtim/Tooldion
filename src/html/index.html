@@ -4,9 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Env</title>
+    <style>
+      .accordion__container {
+        background-color: white;
+      }
+      .accordion__control {
+        width: 100%;
+        padding: 1em;
+        border-bottom: 1px solid teal;
+      }
+
+      .accordion__control:before {
+        margin-right: 0.8em;
+        width: 1em;
+        transform-origin: 0.75em 0.75em;
+      }
+
+      .accordion__control--selected:before {
+        transform: rotate(-0.125turn);
+      }
+    </style>
   </head>
   <body>
     <main>
+      <!-- Accordion Component -->
       <article class="accordion__container">
         <!-- Accordion Section 1 -->
         <section>
@@ -68,6 +89,7 @@
         </section>
         <!-- End Accordion Section 3 -->
       </article>
+      <!-- End Accordion Component -->
     </main>
   </body>
 </html>
