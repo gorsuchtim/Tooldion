@@ -1,0 +1,19 @@
+.tooltip__wrap {
+  position: relative;
+  display: inline;
+}
+.tooltip__control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dotted teal;
+  cursor: pointer;
+}
+.tooltip__content {
+  position: absolute;
+  background-color: white;
+  padding: 1em;
+  left: 0;
+  width: 25em;
+  top: 1.25em;
+  z-index: 2;
+}

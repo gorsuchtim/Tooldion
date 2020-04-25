@@ -6,8 +6,12 @@ const Tooltips = () => {
   var tooltipControls = Array.from(
     document.querySelectorAll(".tooltip__control")
   );
-  var tooltipPanels = Array.from(".tooltip__content");
-  var tooltipCloseButtons = Array.from(".tooltip__close");
+  var tooltipPanels = Array.from(
+    document.querySelectorAll(".tooltip__content")
+  );
+  var tooltipCloseButtons = Array.from(
+    document.querySelectorAll(".tooltip__close")
+  );
 
   HandleEvents(tooltipControls, tooltipPanels, tooltipCloseButtons);
 };
