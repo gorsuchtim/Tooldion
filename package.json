@@ -1,7 +1,7 @@
 {
-  "name": "tooldion",
+  "name": "webpack_template",
   "version": "1.0.0",
-  "description": "Template for ADA compliant tooltips/accordions",
+  "description": "A template build structure for a webpack build",
   "main": "index.js",
   "scripts": {
     "build": "npm run clean && npm run format && webpack --config webpack.production.js",
@@ -11,8 +11,17 @@
     "lint": "eslint \"src/**/*.js\"",
     "prettier": "prettier --write \"src/**/*.{html,htm,css,scss,json,js,jsx}\" --write"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorsuchtim/webpack_template.git"
+  },
+  "keywords": [],
   "author": "Tim Gorsuch",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gorsuchtim/webpack_template/issues"
+  },
+  "homepage": "https://github.com/gorsuchtim/webpack_template#readme",
   "devDependencies": {
     "@babel/core": "^7.8.6",
     "@babel/plugin-transform-shorthand-properties": "^7.8.3",

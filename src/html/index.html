@@ -4,8 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Env</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .hidden {
+        display: hidden;
+      }
+      .accordion__container {
+        background-color: white;
+      }
+      .accordion__control {
+        width: 100%;
+        padding: 1em;
+        border-bottom: 1px solid teal;
+      }
+
+      .accordion__control:before {
+        margin-right: 0.8em;
+        width: 1em;
+        transform-origin: 0.75em 0.75em;
+      }
+
+      .accordion__control--selected:before {
+        transform: rotate(-0.125turn);
+      }
+    </style>
   </head>
   <body>
-    <h1>ello whirled</h1>
+    <main>
+      <!-- Accordion Component -->
+      <article class="accordion__container">
+        <!-- Accordion Section 1 -->
+        <section>
+          <button
+            class="accordion__control"
+            aria-expanded="false"
+            aria-controls="accordion__content--1"
+          >
+            Accordion Control 1
+          </button>
+
+          <div
+            class="accordion__content hidden"
+            aria-hidden="true"
+            id="accordion__content--1"
+          >
+            <h4>Accordion Content 1</h4>
+          </div>
+        </section>
+        <!-- End Accordion Section 1 -->
+
+        <!-- Accordion Section 2 -->
+        <section>
+          <button
+            class="accordion__control"
+            aria-expanded="false"
+            aria-controls="accordion__content--2"
+          >
+            Accordion Control 2
+          </button>
+
+          <div
+            class="accordion__content hidden"
+            aria-hidden="true"
+            id="accordion__content--2"
+          >
+            <h4>Accordion Content 2</h4>
+          </div>
+        </section>
+        <!-- End Accordion Section 2 -->
+
+        <!-- Accordion Section 3 -->
+        <section>
+          <button
+            class="accordion__control"
+            aria-expanded="false"
+            aria-controls="accordion__content--3"
+          >
+            Accordion Control 3
+          </button>
+
+          <div
+            class="accordion__content hidden"
+            aria-hidden="true"
+            id="accordion__content--3"
+          >
+            <h4>Accordion Content 3</h4>
+          </div>
+        </section>
+        <!-- End Accordion Section 3 -->
+      </article>
+      <!-- End Accordion Component -->
+    </main>
   </body>
 </html>

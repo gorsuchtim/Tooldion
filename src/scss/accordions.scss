@@ -1,0 +1,18 @@
+.accordion__container {
+  background-color: white;
+}
+.accordion__control {
+  width: 100%;
+  padding: 1em;
+  border-bottom: 1px solid teal;
+}
+
+.accordion__control:before {
+  margin-right: 0.8em;
+  width: 1em;
+  transform-origin: 0.75em 0.75em;
+}
+
+.accordion__control--selected:before {
+  transform: rotate(-0.125turn);
+}
